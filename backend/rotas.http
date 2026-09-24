@@ -1,0 +1,22 @@
+GET http://localhost:3333/api/tasks
+
+###
+
+POST http://localhost:3333/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Estudar Fastify",
+    "dueDate": "2026-09-20"
+}
+
+###
+
+PATCH http://localhost:3333/api/tasks/1
+Content-Type: application/json
+
+{"completed": true}
+
+###
+
+DELETE http://localhost:3333/api/tasks/1
